@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:tokokita/bloc/produk_bloc.dart';
 import 'package:tokokita/model/produk.dart';
 import 'package:tokokita/ui/login_page.dart';
-import 'package:tokokita/ui/produk_detail.dart';
-import 'package:tokokita/ui/produk_form.dart';
+import 'package:tokokita/ui/produk/produk_detail.dart';
+import 'package:tokokita/ui/produk/produk_form.dart';
 import 'package:tokokita/bloc/logout_bloc.dart';
+import 'package:tokokita/ui/pelanggan/pelanggan_page.dart';
 
 // ganti nama class
 class ProdukPage extends StatefulWidget {
@@ -116,6 +117,27 @@ class _ProdukPageState extends State<ProdukPage> {
     return Drawer(
       child: ListView(
         children: [
+          // SIDE BAR INI BANGGG
+          _buildDrawerItem(
+            title: 'Produk',
+            icon: Icons.shop,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ProdukPage()),
+              );
+            },
+          ),
+          _buildDrawerItem(
+            title: 'Pelanggan',
+            icon: Icons.person,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const PelangganPage()),
+              );
+            },
+          ),
           _buildDrawerItem(
             title: 'Logout',
             icon: Icons.logout,

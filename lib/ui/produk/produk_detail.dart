@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tokokita/model/produk.dart';
-import './produk_form.dart';
+import 'produk_form.dart';
 
 // ganti nama class
 class ProdukDetail extends StatefulWidget {
