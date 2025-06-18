@@ -5,6 +5,7 @@ import 'package:tokokita/helpers/api_url.dart';
 import 'package:tokokita/model/registrasi.dart';
 
 class RegistrasiBloc {
+  // Registrasi isinya nama, email, password
   static Future<Registrasi> registrasi({
     String? nama,
     String? email,
