@@ -62,15 +62,15 @@ class _ProdukDetailState extends State<ProdukDetail> {
         ),
         const SizedBox(width: 10),
         // Tombol Hapus
-        OutlinedButton(
+        /* OutlinedButton(
           child: const Text("DELETE"),
           onPressed: () => confirmHapus(),
-        ),
+        ) */
       ],
     );
   }
 
-  void confirmHapus() {
+  /* void confirmHapus() {
     showDialog(
       context: context,
       builder: (context) {
@@ -82,6 +82,7 @@ class _ProdukDetailState extends State<ProdukDetail> {
               child: const Text("Ya"),
               onPressed: () {
                 Navigator.pop(context); // Tutup dialog
+
                 ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(content: Text("Produk berhasil dihapus")),
                 );
@@ -97,5 +98,5 @@ class _ProdukDetailState extends State<ProdukDetail> {
         );
       },
     );
-  }
+  } */
 }
